@@ -1,0 +1,669 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Style de paragraphe pour effet de différents options */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #fff; /* Couleur de fond blanche */
+    padding: 1rem; /* Espacement interne */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    position: fixed; /* Fixe l'en-tête en haut de la page */
+    top: 0; /* Position en haut */
+    width: 100%; /* Prend toute la largeur */
+    z-index: 1000; /* Assure que l'en-tête reste au-dessus du contenu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem; /* Taille de police du logo */
+    color: #000; /* Couleur du texte du logo */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de paragraphe pour effet de différents options */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #fff; /* Couleur de fond blanche */
+    padding: 1rem; /* Espacement interne */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    position: fixed; /* Fixe l'en-tête en haut de la page */
+    top: 0; /* Position en haut */
+    width: 100%; /* Prend toute la largeur */
+    z-index: 1000; /* Assure que l'en-tête reste au-dessus du contenu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem; /* Taille de police du logo */
+    color: #000; /* Couleur du texte du logo */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 1rem;
+}
+
+.navbar li a {
+    color: #000; /* Couleur des liens dans la barre de navigation */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 1rem 1.5rem; /* Espacement autour des liens */
+}
+
+.navbar li a:hover {
+    color: #fb911f; /* Change la couleur au survol */
+}
+
+.btn-Aider {
+    background: #fb911f; /* Couleur de fond du bouton Aide */
+    color: #fff; /* Couleur du texte du bouton Aide */
+    padding: 0.5rem 1rem; /* Espacement interne du bouton */
+    text-decoration: none; /* Supprime le soulignement */
+    border-radius: 0.25rem; /* Coins arrondis */
+}
+
+.btn-Aider:hover {
+    background: #e6821c; /* Change la couleur de fond au survol */
+}
+
+/* Media Queries pour garantir la réactivité et masquer les onglets spécifiques sur petits écrans */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        display: none; /* Masque tous les onglets par défaut */
+    }
+
+    .navbar li a {
+        padding: 0.5rem 1rem; /* Réduit l'espacement pour les petits écrans */
+    }
+
+    /* Afficher uniquement le bouton Aide sur les petits écrans */
+    .btn-Aider {
+        display: block;
+    }
+}
+
+
+/* Style de paragraphe pour effet de différents options */
+p {
+    font-weight: 300;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; /* Utiliser space-between pour la distribution */
+    align-items: center;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.8); /* Ajout d'un fond semi-transparent */
+}
+
+body {
+    background-image: url('cigarette-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Chargement du logo Vertueuse */
+.logo {
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    position: relative;
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 10px; /* Ajouter du padding */
+    color: #000; /* Utiliser le noir pour le texte */
+}
+
+/* Chargement de V */
+.logo span {
+    color: #fb911b;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-item .nav-link {
+    padding: 10px 18px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-item .nav-link:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-item .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        color: var(--white-color);
+        font-size: var(--font-size-xl);
+    }
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Style de paragraphe pour effet de différents options */
+p {
+    font-weight: 300;
+    color: #fff;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 10px; /* Add padding */
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.navbar a:hover {
+    color: #007BFF; /* Hover color */
+}
+
+.navbar a.active {
+    color: #FF5733; /* Active link color */
+    font-weight: bold; /* Make it bold */
+}
+
+/* Bouton Aide */
+.btn-Aider {
+    padding: 10px 20px;
+    background: #fb911b;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-Aider:hover {
+    background: #d87710;
+    transition: ease-out;
+}
+
+header.navbar li a:hover {
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+}
+
+/* Section Bannière */
+.banniere {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(cigarette-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banniere .contenu {
+    max-width: 70%;
+    text-align: center;
+}
+
+.banniere .contenu h2 {
+    color: #000;
+    font-size: 5em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.btn2 {
+    padding: 10px 20px;
+    color: white;
+    background-color: #1A2B3C; /* Example background color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: letter-spacing 0.3s; /* Smooth transition for letter-spacing */
+}
+
+.btn2:hover {
+    letter-spacing: 4px;
+    background-color: #1A2B3C;
+}
+
+.section {
+    padding: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centre la colonne */
+    margin: 20px; /* Espacement autour de la ligne */
+}
+
+.col50 {
+    width: 50%; /* Largeur de la colonne */
+    padding: 20px; /* Espacement interne */
+    background-color: #CD5C5C; /* Couleur d'arrière-plan */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+/* Produit */
+.titre-texte{
+    color: #fb911b;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+/* chargement de P sur produit */
+.titre-texte span{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row.col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+    background: #CD5C5C;
+
+}
+
+h3{
+    color: #fff;
+}
+
+/* chargement Produit */
+
+.titre {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Produit {
+    margin-top: -100px;
+}
+
+.contenu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    border: 1px solid #000;
+    width: 350px;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.imbox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .contenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+    }
+
+    .Produit {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .Produit {
+        margin-top: -30px;
+    }
+}
+
+
+
+
+.Tegmoignage {
+    background-image: url(cigarette-1.jpg);
+    background-size: cover;
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Tegmoignage.contenu.box {
+    width: 340px;
+    margin: 20px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.Tegmoignage.contenu.box.imbox {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.Tegmoignage.contenu.box.imbox img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tegmoignage.contenu.box.text {
+    text-align: center;
+    color: #0000;
+    font-style: italic;
+}
+
+.text {
+    color: #fff;
+    background-color: #000;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.Tegmoignage.contenu.box.h3 {
+    color: #fb911b;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .Tegmoignage.contenu.box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Tegmoignage.contenu.box {
+        width: 90%;
+    }
+
+    .Tegmoignage {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Tegmoignage.contenu.box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .Tegmoignage {
+        margin-top: 10px;
+    }
+}
+
+
+.contact {
+    background-image: url('14.jpg'); /* Assurez-vous que le chemin est correct */
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: center; /* Centre l'image */
+    padding: 50px 0; /* Ajoute un espacement vertical */
+}
+
+.contactform {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin: 50px auto; /* Centre le formulaire horizontalement */
+    position: relative;
+}
+
+.contactform h3 {
+    color: #111;
+    font-size: 1.5em; /* Augmente la taille du titre */
+    margin-bottom: 20px;
+    text-align: center; /* Centre le texte */
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px; /* Ajoute un espacement entre les champs */
+    border-radius: 4px; /* Ajoute des coins arrondis */
+}
+
+.contactform .inputboite input[type="submit"] {
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: #fb911f;
+    border: none; /* Supprime la bordure par défaut */
+    padding: 10px; /* Ajoute du padding pour le bouton */
+    cursor: pointer; /* Change le curseur au survol */
+    border-radius: 4px; /* Ajoute des coins arrondis */
+}
+
+.contactform .inputboite input[type="submit"]:hover {
+    background: #e68a17; /* Change la couleur au survol */
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .contactform {
+        padding: 50px 25px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactform {
+        padding: 30px 20px;
+        max-width: 95%;
+    }
+
+    .contact {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactform {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+
+    .contact {
+        padding: 20px 0;
+    }
+
+    .contactform h3 {
+        font-size: 1.2em;
+    }
+}
+
+/*.header.sticky{
+    background: #fff;
+    padding: 10px 10px ;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header.sticky.logo{
+    color: #000;
+}
+
+.header.sticky.navbar li a{
+    color: #000;
+}*/
+
+.header.sticky {
+    background: #fff; /* Couleur de fond blanche */
+    padding: 1rem 1rem; /* Espacement interne */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    position: fixed; /* Fixe l'en-tête en haut de la page */
+    top: 0; /* Position en haut */
+    width: 100%; /* Prend toute la largeur */
+    z-index: 1000; /* Assure que l'en-tête reste au-dessus du contenu */
+}
+
+.header.sticky.logo {
+    color: #000; /* Couleur du texte du logo */
+}
+
+.header.sticky.navbar li a {
+    color: #000; /* Couleur des liens dans la barre de navigation */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 1rem 1.5rem; /* Espacement autour des liens */
+}
+
+.header.sticky.navbar li a:hover {
+    color: #fb911f; /* Change la couleur au survol */
+}
+
+/* Media Queries pour garantir la réactivité */
+@media (max-width: 768px) {
+    .header.sticky.navbar li a {
+        padding: 0.5rem 1rem; /* Réduit l'espacement pour les petits écrans */
+    }
+}
+
